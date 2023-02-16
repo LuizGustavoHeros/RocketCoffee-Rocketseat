@@ -1,0 +1,103 @@
+:root {
+  --backgrond: #000;
+  --text-color: #FFF;
+  --button: #8257E5;
+  --border: #29292E;
+  --border-menu-mobile: #A8A8B3;
+  --text-color-menu-mobile: #E1E1E6;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--backgrond);
+  color: var(--text-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px ;
+}
+.abrir {
+  display: none;
+}
+
+.botao {
+  background-color: var(--backgrond);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  text-align: center; 
+  align-items: center;
+  flex-direction: column;
+  margin: 30% 10%;
+  
+}
+
+main span {
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+main button{
+  display: flex;
+  background-color: var(--backgrond);
+  color: white;
+  cursor: pointer ;
+  border: solid 1px;
+  border-radius: 5px ;
+  border-color: var(--button);
+  padding: 6px 25px;
+  margin-top: 30% ;
+  
+}
+
+main button span {
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-top: 1px;
+}
+
+main button img {
+  margin-left: 10px ;
+}
+
+footer {
+  text-align: center;
+  align-items: center;
+  
+}
+
+.titulo-text {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.sombra {
+  text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+  color: black;
+}
+
+.coffee {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  left: 0;
+  
+}
+
+.blur-mobile {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
