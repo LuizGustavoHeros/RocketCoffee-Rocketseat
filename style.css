@@ -19,11 +19,12 @@ html {
   box-sizing: border-box;
 }
 
-nav {
+.cabecalho {
   display: flex;
   justify-content: space-between;
   margin: 20px 15px ;
 }
+
 .abrir {
   display: none;
 }
@@ -31,6 +32,32 @@ nav {
 .botao {
   background-color: var(--backgrond);
   cursor: pointer;
+}
+
+.navegacao-close {
+  display: none;
+}
+
+.navegacao-open {
+  display: block;
+  border-bottom: solid 0.5px;
+  border-color: var(--border);
+}
+
+.navegadores {
+  display: block;
+  border-top: solid 0.5px;
+  border-color: var(--border);
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px ;
+  font-weight: 400;
+  color: var(--text-color-menu-mobile);
+}
+.navegadores:hover {
+  border-left: solid 5px ;
+  border-left-color: var(--button) ;
+  color: var(--text-color);
 }
 
 main {
