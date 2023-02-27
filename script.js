@@ -5,12 +5,12 @@ function clicou() {
   const main = document.querySelector('main')
   const footer = document.querySelector('footer')
 
-  if(botaoFechar.innerHTML === `<img src="./assets/menu-buguer-close.svg">` ) {
+  if (botaoFechar.innerHTML === `<img src="./assets/menu-buguer-close.svg">`) {
     botaoFechar.innerHTML = ''
-  }else{
+  } else {
     botaoFechar.innerHTML = `<img src="./assets/menu-buguer-close.svg">`
   }
-  
+
   botaoAbrir.classList.toggle('abrir')
   nav.classList.toggle('navegacao-open')
   main.classList.toggle('abrir')

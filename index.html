@@ -5,60 +5,72 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>RocketCoffee</title>
+  <link href="reset.css" rel="stylesheet" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="blur-desktop-top">
   <header>
     <nav>
-      <div class="cabecalho">
-        <img src="./assets/logo-mobile.svg">
-        <button onclick="clicou()" class="botao">
-          <img id="botao-open" src="./assets/menu-buguer-open.svg">
-          <div id="botao-close"></div>
-        </button>
-      </div>
-      <section id="nav" class="navegacao-close">
-        <div class="navegadores">
-          <span>Home</span>
+      <section class="nav-mobile">
+        <div class="cabecalho">
+          <img src="./assets/logo-mobile.svg">
+          <button onclick="clicou()" class="botao">
+            <img id="botao-open" src="./assets/menu-buguer-open.svg">
+            <div id="botao-close"></div>
+          </button>
         </div>
-        
-        <div class="navegadores">
-          <span>Menu</span>
-        </div>
-        
-        <div class="navegadores">
-          <span>Recompensas</span>
-        </div>
-        
-        <div class="navegadores">
-          <span>Gift Cards</span>
-        </div>
-        
-        <div class="navegadores">
-          <span>Lojas</span>
-        </div>
-        
+        <section id="nav" class="navegacao-close">
+          <div class="navegadores">
+            <span>Home</span>
+          </div>
+
+          <div class="navegadores">
+            <span>Menu</span>
+          </div>
+
+          <div class="navegadores">
+            <span>Recompensas</span>
+          </div>
+
+          <div class="navegadores">
+            <span>Gift Cards</span>
+          </div>
+
+          <div class="navegadores">
+            <span>Lojas</span>
+          </div>
+        </section>
       </section>
+      <section class="nav-desktop">
+        <div class="cabecalho">
+          <img src="./assets/logo-desktop.svg">
+          <ul class="menu-desktop">
+            <li class="menu-li">Home</li>
+            <li class="menu-li">Menu</li>
+            <li class="menu-li">Recompensas</li>
+            <li class="menu-li">Gift Cards</li>
+            <li class="menu-li">Lojas</li>
+          </ul>
+          <button class="button-coffee"><span>Pegar meu café</span><img src="assets/arrow.svg"></button>
+        </div>
+      </section>
+
     </nav>
-
-
   </header>
   <main>
     <span>O café que fará seu código decolar para o próximo nível.</span>
     <button><span>Pegar meu café</span><img src="assets/arrow.svg"></button>
   </main>
   <footer>
-    <div class="final-page">
-      <div class="titulo-text">
-        <span>Great Coffee</span>
-        <p class="sombra">
-          < Great Code />
-        </p>
-      </div>
+    <div class="titulo-text">
+      <span>Great Coffee</span>
+      <p class="sombra">
+        < Great Code />
+      </p>
     </div>
     <img class="coffee" src="./assets/rocket-coffee.png">
     <img class="blur-mobile" src="./assets/blur-mobile.png">
